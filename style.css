@@ -27,31 +27,34 @@
 body{
     font-size: 15px;
     font-family: 'League Spartan', sans-serif;
-    background-image: url(./images/bg-pattern-top-mobile.svg);
-    background-repeat: no-repeat;
 }
 
 main{
     width: 375px; 
     padding: 1.75rem;
     margin: 0 auto;
+    background-image: url(./images/bg-pattern-top-mobile.svg);
+    background-repeat: no-repeat;
 }
 
 .tagline{
-    max-width: 375px;
+    /* max-width: 375px; */
+    width: 375px;
     text-align: center;
     margin-bottom: 2rem;
 }
 
 .tagline h1{
-    max-width: 200px;
+    /* max-width: 200px; */
+    width: 200px;
     margin: 1rem auto;
     margin-top: 2rem;
     color: var(--color-magenta-600);
 }
 
 .tagline p{
-    max-width: 300px;
+    /* max-width: 300px; */
+    width: 300px;
     margin: 0 auto;
     color: var(--color-magenta-400);
     line-height: 1.2rem;
@@ -111,4 +114,100 @@ main{
     width: 2.5rem;
     height: auto;
     object-fit: cover;
+}
+
+@media (min-width: 1440px){
+
+    main{
+        width: 90vw;
+        margin: 2rem auto;
+        background-image: url(./images/bg-pattern-top-desktop.svg);
+        background-repeat: no-repeat;
+    }
+
+    .tagline-ratings-wrapper{
+        display: flex;
+    }
+
+    .tagline{
+        text-align: left;
+        width: 45%;
+    }
+
+    .tagline h1{
+        margin-left: 6.2rem;
+        font-size: 4rem;
+        width: 75%;
+        margin-bottom: 1.5rem;
+    }
+
+    .tagline p{
+        font-size: 1.25rem;
+        font-weight: var(--fw-medium);
+        line-height: 1.5rem;
+        width: 75%;
+        margin-left: 6.2rem;
+        margin-right: 0;
+    }
+
+    .ratings{
+        margin-top: 4.5rem;
+        font-size: 1.25rem;
+        margin-left: 4rem;   
+    }
+    
+    .ratings .rating{
+        display: flex;
+        gap: 2rem;
+        flex-direction: row;
+        align-items: center;
+        padding: 1.25rem 3rem;
+    }
+
+    .rating-1{
+        margin-left: 3rem;
+        margin-right: 6rem;
+    }
+
+    .rating-2{
+        margin-left: 6rem;
+        margin-right: 3rem;
+    }
+
+    .rating-3{
+        margin-left: 9rem;
+    }
+
+    .testimonials{
+        margin-left: 4rem;
+        padding-left: 2rem;
+        /* padding-right: 6rem; */
+        padding-right: 4rem;
+        font-size: 1.2rem;
+        display: flex;
+        gap: 2rem;
+        flex-direction: row;
+    }
+    
+    .testimonial{
+        width: 400px;
+        padding: 3rem 2rem;
+        height: 268px;
+    }
+
+    .testimonial-1{
+        margin-top: 1rem;
+        /* margin-bottom:4rem; */
+    }
+
+    .testimonial-2{
+        margin-top: 2rem;
+        /* margin-bottom: 2rem; */
+    }
+
+    .testimonial-3{
+        margin-top: 3rem;
+        /* margin-bottom:1rem; */
+    }
+
 }
